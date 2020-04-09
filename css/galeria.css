@@ -1,0 +1,53 @@
+.gallery-img{
+    object-fit: cover; /*no se estire la imagen*/
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.gallery-img:hover{
+    transform: scale(1.02);
+}
+.gallery-img-big{
+    height: 400px;
+}
+.gallery-img-small{
+    height: 200px;
+}
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background:  rgba(0,0,0,0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index :1000000;
+    display: none;
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal-img{
+    width: 50%;
+}
+.modal-boton{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color:white;
+    cursor:pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #DE423A;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+}
+.modal-open{ /*clase para agrandar imagen cuando de click*/
+    display: block;
+}
